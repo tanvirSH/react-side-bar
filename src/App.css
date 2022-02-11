@@ -50,6 +50,8 @@ main {
    gap: 10px;
    color: #fff;
    padding: 5px 10px;
+   border-right: 4px solid transparent;
+   transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
  }
  a {
    text-decoration: none;
@@ -68,5 +70,29 @@ main {
  .link-text {
   white-space: nowrap;
   font-size: "15px";
+ }
 
+ .menu {
+  display: flex;
+  gap: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  justify-content: space-between;
+  border-right: 4px solid transparent;
+  transition: 0.2s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+ }
+
+ .menu_item {
+   display: flex;
+   gap: 10px;
+ }
+
+ .menu-container {
+   display: flex;
+   flex-direction: column;
+ }
+
+ .menu-container .link {
+   padding-left: 20px;
+   border-bottom: 0.5px solid #fff;
  }
